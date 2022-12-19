@@ -52,7 +52,7 @@ data class User(val name: String, var userEducation: MutableList<Career>? = null
 
 // Enrolled Careers can be accessed by extension property and by extension function
 val User.enrolledContent: String get() = userEducation?.joinToString { it.careerName!! }.toString()
-//fun User.getStudentFormations(): String = userEducation?.joinToString { it.careerName!! }.toString()
+//fun User.getUserEducation(): String = userEducation?.joinToString { it.careerName!! }.toString()
 
 object DIOEducationalContent {
     private val educationalContent = mapOf(
